@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class UserRegistration extends Activity {
@@ -35,5 +36,14 @@ public class UserRegistration extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * Handler for the click event for the "Create Account" button.
+     * @param v
+     */
+    public void onButtonCreateAccountClick(View v) {
+
+
     }
 }

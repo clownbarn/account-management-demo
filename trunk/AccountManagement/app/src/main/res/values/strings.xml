@@ -10,6 +10,9 @@
     <string name="button_welcome_login">Log In</string>
     <string name="textview_registration_title">User Registration</string>
     <string name="textview_registration_message">Provide a user name and password and click Create Account.</string>
-    <string name="textview_registration_user_name_title">User Name:</string>
+    <string name="textview_registration_new_user_name_title">User Name:</string>
+    <string name="textview_registration_new_password_title">Password:</string>
+    <string name="textview_registration_new_password_confirm_title">Confirm Password:</string>
+    <string name="button_registration_create_new_account">Create Account</string>
 
 </resources>

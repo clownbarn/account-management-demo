@@ -1,20 +1,17 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.swhittier.accountmanagement.UserRegistration"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.swhittier.accountmanagement.UserRegistration">
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignWithParentIfMissing="false"
-        android:background="@android:color/darker_gray"
-        android:id="@+id/userRegistrationMainLayout"
-        android:weightSum="1">
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignWithParentIfMissing="false"
+    android:background="@android:color/darker_gray"
+    android:id="@+id/userRegistrationMainLayout"
+    android:weightSum="1">
 
         <TextView
             android:layout_width="match_parent"
@@ -32,19 +29,89 @@
             android:layout_gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/textview_registration_user_name_title"
-            android:id="@+id/textViewUserNameTitle"
+            android:text="@string/textview_registration_new_user_name_title"
+            android:id="@+id/textViewNewUserNameTitle"
             android:paddingTop="20dp"
             android:paddingBottom="10dp"
             android:textSize="18sp"
             android:layout_gravity="left"
-            android:paddingLeft="5dp" />
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="5dp" />
 
-    </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextNewUserName"
+            android:background="@android:color/background_light"
+            android:layout_weight="0.05"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text" />
 
-</RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_registration_new_password_title"
+            android:id="@+id/textViewNewPassword"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:textSize="18sp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextNewPassword"
+            android:background="@android:color/background_light"
+            android:layout_weight="0.05"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_registration_new_password_confirm_title"
+            android:id="@+id/textViewNewPasswordConfirm"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:textSize="18sp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextNewPasswordConfirm"
+            android:background="@android:color/background_light"
+            android:layout_weight="0.05"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="textPassword"
+            android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_registration_create_new_account"
+        android:id="@+id/buttonCreateNewAccount"
+        android:layout_gravity="center_horizontal"
+        android:background="#ff0000ff"
+        android:textColor="@android:color/darker_gray"
+        android:clickable="true"
+        android:enabled="true"
+        android:layout_marginTop="15dp"
+        android:onClick="onButtonCreateAccountClick" />
+
+</LinearLayout>
