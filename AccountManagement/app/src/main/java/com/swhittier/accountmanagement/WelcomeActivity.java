@@ -1,6 +1,7 @@
 package com.swhittier.accountmanagement;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -8,6 +9,8 @@ import android.view.View;
 
 
 public class WelcomeActivity extends Activity {
+
+    //region Overrides
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,10 @@ public class WelcomeActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+    //endregion
+
+    //region Event Handlers
+
     /**
      * Handler for the click event for the "Register" button.
      * Presents the UserRegistration Activity.
@@ -45,7 +52,9 @@ public class WelcomeActivity extends Activity {
      */
     public void onButtonGoToRegisterClick(View v) {
 
-        setContentView(R.layout.activity_user_registration);
+        //setContentView(R.layout.activity_user_registration);
+        Intent myIntent = new Intent(this, UserRegistration.class);
+        this.startActivity(myIntent);
     }
 
     /**
@@ -56,4 +65,6 @@ public class WelcomeActivity extends Activity {
     public void onButtonGoToLoginClick(View v) {
 
     }
+
+    //endregion
 }

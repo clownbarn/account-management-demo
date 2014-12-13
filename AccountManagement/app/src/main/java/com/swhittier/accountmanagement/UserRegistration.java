@@ -2,12 +2,22 @@ package com.swhittier.accountmanagement;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
 
 public class UserRegistration extends Activity {
+
+    //region Constants
+
+    static final String CLASS_TAG = "UserRegistration";
+
+    //endregion
+
+    //region Overrides
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,12 +48,45 @@ public class UserRegistration extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+    //endregion
+
+    //region Event Handlers
+
     /**
      * Handler for the click event for the "Create Account" button.
      * @param v
      */
     public void onButtonCreateAccountClick(View v) {
 
+        String METHOD_TAG;
+        METHOD_TAG = CLASS_TAG + ".onButtonCreateAccountClick()";
 
+        Log.d(METHOD_TAG, "Validating User Name.");
+
+        validateUserName();
     }
+
+    //endregion
+
+    //region Private Methods
+
+    /**
+     * Validates the User Name.
+     */
+    private void validateUserName(){
+
+        String METHOD_TAG;
+        METHOD_TAG = CLASS_TAG + ".validateUserName()";
+
+        EditText newUserNameEditText;
+        newUserNameEditText = (EditText)findViewById(R.id.editTextNewUserName);
+
+        String newUserName;
+        newUserName = newUserNameEditText.getText().toString();
+
+        if(null == newUserName || newUserName.isEmpty())
+            Log.d(METHOD_TAG, "Invalid User Name.  Reason: blank.");
+    }
+
+    //endregion
 }
