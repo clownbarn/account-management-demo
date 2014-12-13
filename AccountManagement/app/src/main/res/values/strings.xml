@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Account Management Demo</string>
+    <string name="action_settings">Settings</string>
+    <string name="textview_welcome_title">Welcome</string>
+    <string name="textview_welcome_need_account">Need an account?</string>
+    <string name="button_welcome_register">Register</string>
+    <string name="textview_welcome_have_account">Already have an account?</string>
+    <string name="button_welcome_login">Log In</string>
+    <string name="textview_registration_title">User Registration</string>
+    <string name="textview_registration_message">Provide a user name and password and click Create Account.</string>
+    <string name="textview_registration_user_name_title">User Name:</string>
+
+</resources>
