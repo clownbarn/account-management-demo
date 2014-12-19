@@ -8,7 +8,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
-
+/**
+ * Class Name: UserRegistation
+ * Description: Code for the UserRegistion Activity
+ */
 public class UserRegistration extends Activity {
 
     //region Constants
