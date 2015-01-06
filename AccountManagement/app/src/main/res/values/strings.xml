@@ -14,5 +14,24 @@
     <string name="textview_registration_new_password_title">Password:</string>
     <string name="textview_registration_new_password_confirm_title">Confirm Password:</string>
     <string name="button_registration_create_new_account">Create Account</string>
+    <string name="err_msg_username_blank">User name cannot be blank</string>
+    <string name="err_msg_username_exceeds_max_len">User name exceeds maximum length of: %1$s</string>
+    <string name="err_msg_username_under_min_len">User name does not meet minimum length of: %1$s</string>
+    <string name="err_msg_password_strength">Password must be alphanumeric with at least 1 digit, 1 uppercase, and a length between %1$s and %2$s</string>
+    <string name="err_msg_password_confirm_mismatch">The password and confirmation password do not match</string>
+    <string name="err_msg_no_accounts">Account not found.  Please register.</string>
+    <string name="textview_login_title">Log In</string>
+    <string name="textview_login_message">Provide a user name and password and click Log In.</string>
+    <string name="textview_login_user_name_title">User Name:</string>
+    <string name="textview_login_password_title">Password:</string>
+    <string name="button_login">Log In</string>
+    <string name="title_activity_application_home">ApplicationHome</string>
+    <string name="textview_app_home_title">Application Home</string>
+    <string name="textview_app_home_message">The user has successfully logged into the application.</string>
+    <string name="msg_account_created">Account Created</string>
+    <string name="msg_account_already_exists">An Account already exists on the device</string>
+    <string name="err_msg_no_account_for_user">An Account could not be found for user: %1$s</string>
+    <string name="err_account_not_created">Account Not Created</string>
+    <string name="err_msg_invalid_password">The password is invalid</string>
 
 </resources>

@@ -44,7 +44,7 @@
             android:textColor="@android:color/darker_gray"
             android:clickable="true"
             android:enabled="true"
-            android:onClick="onButtonGoToRegisterClick" />
+            android:onClick="onButtonGoToRegisterUserRegistrationClick" />
 
         <TextView
             android:layout_width="wrap_content"

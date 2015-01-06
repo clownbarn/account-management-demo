@@ -38,13 +38,12 @@
             android:layout_height="wrap_content"
             android:text="@string/textview_registration_new_user_name_title"
             android:id="@+id/textViewNewUserNameTitle"
-            android:paddingTop="20dp"
-            android:paddingBottom="10dp"
             android:textSize="18sp"
             android:layout_gravity="left"
             android:paddingLeft="5dp"
             android:layout_marginLeft="5dp"
-            android:paddingRight="5dp" />
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" />
 
         <EditText
             android:layout_width="match_parent"
@@ -61,12 +60,11 @@
             android:layout_height="wrap_content"
             android:text="@string/textview_registration_new_password_title"
             android:id="@+id/textViewNewPassword"
-            android:paddingTop="20dp"
-            android:paddingBottom="10dp"
             android:textSize="18sp"
             android:paddingLeft="5dp"
             android:layout_marginLeft="5dp"
-            android:paddingRight="5dp" />
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" />
 
         <EditText
             android:layout_width="match_parent"
@@ -83,8 +81,7 @@
             android:layout_height="wrap_content"
             android:text="@string/textview_registration_new_password_confirm_title"
             android:id="@+id/textViewNewPasswordConfirm"
-            android:paddingTop="20dp"
-            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
             android:textSize="18sp"
             android:paddingLeft="5dp"
             android:layout_marginLeft="5dp"
@@ -102,7 +99,7 @@
             android:layout_gravity="center_horizontal" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="139dp"
         android:layout_height="wrap_content"
         android:text="@string/button_registration_create_new_account"
         android:id="@+id/buttonCreateNewAccount"
